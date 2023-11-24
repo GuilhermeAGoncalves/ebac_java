@@ -4,6 +4,10 @@ package br.com.ebac.tarefa.celular.controller;
 import br.com.ebac.tarefa.celular.models.Celular;
 
 public class LigarCelular {
+    /**
+     *
+     * @param c Celular
+     */
     public void carregarCelular(Celular c){
         if(c.getEstado().equals("Bom") && c.getBateria() < 100){
             c.setBateria(c.getBateria() + 1);
