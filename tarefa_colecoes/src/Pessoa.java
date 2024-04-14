@@ -1,28 +1,24 @@
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa> {
     private String nome;
-    private char sexo;
+    private String sexo;
 
-    public char getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(char sexo) {
+    public Pessoa(String nome, String sexo) {
+        this.nome = nome;
         this.sexo = sexo;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getSexo() {
+        return sexo;
     }
 
     @Override
     public String toString() {
-        return "{" +
-                "nome='" + nome + '\'' +
-                ", sexo=" + sexo +
-                '}';
+        return nome + " " + sexo;
+    }
+
+    @Override
+    public int compareTo(Pessoa pessoa) {
+        return this.sexo.compareTo(pessoa.getSexo());
+
     }
 }

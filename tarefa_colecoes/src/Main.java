@@ -1,34 +1,36 @@
-
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-
-
-        String nomes = "Guilherme,Joao,Vanessa,Ana";
-        System.out.println("******** PARTE 1 ********");
-        List<String> nomesArray = Arrays.asList(nomes.split(","));
-        System.out.println(nomesArray);
-        Collections.sort(nomesArray);
-        System.out.println(nomesArray);
-
-        System.out.println("******** PARTE 2 ********");
-
-
-        System.out.println(Arrays.toString(getTaskPart2()));
+  //  taskPart1();
+    taskPart2();
     }
 
-    public static String[] getTaskPart2()  {
-        int contador = 0;
+    public static void taskPart1() {
+        System.out.println("--==+Part 1+==--");
+        System.out.println("Digite nomes separdo por [,]");
         Scanner scanner = new Scanner(System.in);
-        StringBuilder nomes = new StringBuilder();
-        while(contador < 3){
-            System.out.println("Digite o nome e o sexo de uma pessoa nesse formato (nome - [M, F])");
-            String nome = scanner.nextLine();
-            nomes.append(nome).append(",");
-            contador++;
+        String nome = scanner.nextLine();
+        List<String> lista = new ArrayList<String>();
+        String[] nomes = nome.split(",");
+        lista.addAll(Arrays.asList(nomes));
+        Collections.sort(lista);
+        System.out.println(lista);
+    }
+    public static void taskPart2() {
+        System.out.println("--==+Part 2+==--");
+        System.out.println("Digite nome-sexo separado por [,]");
+        Scanner scanner = new Scanner(System.in);
+        String pessoa = scanner.nextLine();
+        List<Pessoa> lista = new ArrayList<Pessoa>();
+        String[] pessoas = pessoa.split(",");
+        for (String p : pessoas) {
+            String[] s = p.split("-");
+            Pessoa a = new Pessoa(s[0], s[1]);
+            lista.add(a);
         }
-        return nomes.toString().split(",");
-    };
+        Collections.sort(lista);
+        System.out.println(lista);
+    }
 }
