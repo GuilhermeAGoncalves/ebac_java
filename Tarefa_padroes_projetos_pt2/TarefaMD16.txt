@@ -5,7 +5,7 @@ acertiva e fácil.
 
     A Injeção de Dependências que é um padrão de projetos ajuda a deixar o código mais desacoplado, legivel, de facil interpretação
 e distribui melhor a responsibilidade de cada classe sendo assim vai facilitar a manutenção de nosso código futuro. Para aplicar
-o que devemos fazer não instanciar objetos que realizam funções que podem futuramente ser alterados detro de uma classe e sim
+o que devemos fazer é não instanciar objetos que realizam funções que podem futuramente ser alterados detro de uma classe e sim
 deixar essa responsabilidade dessa instaciação para quem chama a classe
 
 Por exemplo:
