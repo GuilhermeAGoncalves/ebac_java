@@ -1,0 +1,55 @@
+    Para começar quando estamos criando lógicas complexas sempre estamos pensando na qualidade do nosso código e pensando
+quando vamos precisar prestar manutenção no código, quando vamos precisar incrementar nossa lógica seja por que surgiu uma
+demanda ou para melhorar a performance, um código desacoplado e independente vai nos ajudar para fazer isso de forma mais
+acertiva e fácil.
+
+    A Injeção de Dependências que é um padrão de projetos ajuda a deixar o código mais desacoplado, legivel, de facil interpretação
+e distribui melhor a responsibilidade de cada classe sendo assim vai facilitar a manutenção de nosso código futuro. Para aplicar
+o que devemos fazer não instanciar objetos que realizam funções que podem futuramente ser alterados detro de uma classe e sim
+deixar essa responsabilidade dessa instaciação para quem chama a classe
+
+Por exemplo:
+
+Vamos criar um "Carro" que depende de um "Motor" para ligar, em vez de "Motor" sem implementado em "Carro" ela vai receber
+uma instacia de "Motor" de fora seguindo o principio da "Injeção de dependencias"
+
+interface Motor() {
+    void ligar()
+}
+
+Vamos implementar "Motor" no "MotorGasolina"
+class MotorGasolina implements Motor {
+    @Override
+    public void ligar() {
+        System.out.println("Motor a gasolina ligado.");
+    }
+}
+
+A classe "Carro" depende da interface de "Motor", e assim em vez de "Carro" ter sua propria instacia de "Motor" a
+instancia de "MotorGasolina" e criada fora da classe "Carro" e injetada nela através do construtor.
+Permitindo assim diferentes tipos de motores serem criados e usados no "Carro" promovendo flexibilidade e o desacoplamento
+
+class Carro {
+    private Motor motor;
+
+    public Carro(Motor motor){
+        this.motor = motor;
+    }
+
+    public void ligar(){
+        motor.ligar();
+    }
+}
+
+Vamos usar agora.
+
+public class Main {
+    public static void main(String[] args) {
+        MotorGaslina motorGasolina = new MotorGasolina();
+        //Aqui ocorre a injeção de "Motor" no "Carro"
+        Carro carro = new Carro(motorGasolina);
+        carro.ligar(); //Motor a gasolina ligado.
+    }
+}
+
+Dessa forma poderiamos criar "MotorDiesel", "MotorAlcool", "MotorQuerosene" futuramente de forma fácil e segura para nosso código
