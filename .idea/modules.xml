@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Aulas/Aulas.iml" filepath="$PROJECT_DIR$/Aulas/Aulas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projeto1/Projeto1.iml" filepath="$PROJECT_DIR$/Projeto1/Projeto1.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_POO/tarefa_POO.iml" filepath="$PROJECT_DIR$/tarefa_POO/tarefa_POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_classe.iml" filepath="$PROJECT_DIR$/tarefa_classe.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_colecoes/tarefa_colecoes.iml" filepath="$PROJECT_DIR$/tarefa_colecoes/tarefa_colecoes.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_colecoes_pt2/tarefa_colecoes_pt2.iml" filepath="$PROJECT_DIR$/tarefa_colecoes_pt2/tarefa_colecoes_pt2.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_controle_fluxos/tarefa_controle_fluxos.iml" filepath="$PROJECT_DIR$/tarefa_controle_fluxos/tarefa_controle_fluxos.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_operadores/tarefa_operadores.iml" filepath="$PROJECT_DIR$/tarefa_operadores/tarefa_operadores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tarefa_padroes_projetos_pt1/tarefa_padroes_projetos_pt1.iml" filepath="$PROJECT_DIR$/tarefa_padroes_projetos_pt1/tarefa_padroes_projetos_pt1.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_wrapper/tarefa_wrapper.iml" filepath="$PROJECT_DIR$/tarefa_wrapper/tarefa_wrapper.iml" />
     </modules>
   </component>
