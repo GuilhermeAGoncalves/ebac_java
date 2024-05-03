@@ -1,4 +1,4 @@
 
-@Tabela(value = "Guilherme", code = 11, country = "EUA")
+@Tabela(value = "Cliente", code = 11, country = "EUA")
 public class Cliente {
 }
