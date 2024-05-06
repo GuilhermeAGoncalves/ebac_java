@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Aulas/Aulas.iml" filepath="$PROJECT_DIR$/Aulas/Aulas.iml" />
       <module fileurl="file://$PROJECT_DIR$/Projeto1/Projeto1.iml" filepath="$PROJECT_DIR$/Projeto1/Projeto1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aulas/md22/md22.iml" filepath="$PROJECT_DIR$/Aulas/md22/md22.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_POO/tarefa_POO.iml" filepath="$PROJECT_DIR$/tarefa_POO/tarefa_POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_anotation/tarefa_anotation.iml" filepath="$PROJECT_DIR$/tarefa_anotation/tarefa_anotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_classe.iml" filepath="$PROJECT_DIR$/tarefa_classe.iml" />
@@ -13,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/tarefa_generics/tarefa_generics.iml" filepath="$PROJECT_DIR$/tarefa_generics/tarefa_generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_operadores/tarefa_operadores.iml" filepath="$PROJECT_DIR$/tarefa_operadores/tarefa_operadores.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_padroes_projetos_pt1/tarefa_padroes_projetos_pt1.iml" filepath="$PROJECT_DIR$/tarefa_padroes_projetos_pt1/tarefa_padroes_projetos_pt1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tarefa_streams/tarefa_streams.iml" filepath="$PROJECT_DIR$/tarefa_streams/tarefa_streams.iml" />
       <module fileurl="file://$PROJECT_DIR$/tarefa_wrapper/tarefa_wrapper.iml" filepath="$PROJECT_DIR$/tarefa_wrapper/tarefa_wrapper.iml" />
     </modules>
   </component>

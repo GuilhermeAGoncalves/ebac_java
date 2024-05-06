@@ -1,0 +1,59 @@
+Funções lambdas:
+
+    Servem principalmente para reduzir o número de classes declaradas
+
+ Por exemplo:
+
+ temos esssa função de imprimir Pessoas que recebe uma lista de pessoas e uma para verificar a pessoa.
+
+ public staic void printPerson(List<Person> roster, CheckPerson tester){
+    for(Person p : roster){
+        if( tester.test(p){
+            p.printPerson()
+        }
+    }
+ }
+
+ agora teria que criar a interface que CheckPerson
+
+ interface CheckPerson {
+    Boolean test(Pessoa p);
+ }
+
+ e criamos outra classe para usar a nossa interface acima que vai validar se a pessoa é do sexo masculino
+
+ class CheckPersonIsMale implements CheckPerson {
+    public Boolean test(Person P) {
+        return p.gender === Person.sex.MALE
+    }
+ }
+
+ Para usamos a classe acima precisariamos criar uma nova instancia dela
+
+ printPersons(list, new CheckPersonIsMale()}
+
+ Como checkPersonIsMale implementa uma interface poderiamos usar uma classe anónima evitando usar uma classe local para o mesmo
+
+ printPersons(list, new CheckPeson() {
+    public boolean test(Person p) {
+        return p.gender === Person.sex.MALE
+    }
+ }
+
+ Dessa forma usamos bem menos código, mas a sintax é um pouco mais complicada, então usariamos lambda para em vez de uma classe anónima
+
+ printPersons(list, (Pessoa p) -> p.gender === Person.sex.MALE
+
+ A sintaxe para construir uma expressão lambda seria
+
+ Os parametros separados por virgula que se pode omitir o tipo e os parenteses caso tenha apenas um paramentro
+
+ p -> p.gender === Person.sex.MALE
+
+ a flecha ->
+
+ e o corpo da expresssão em uma unica linha em um bloco
+ caso o corpo da função for apenas uma linha ou não tiver um retorno(return) não é necessario trazer os colchetes
+ ex:
+
+ p -> System.out.prinln(p.getGender())
