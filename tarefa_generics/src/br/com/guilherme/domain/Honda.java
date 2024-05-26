@@ -1,25 +1,27 @@
-package br.com.guilherme.Domain;
+package br.com.guilherme.domain;
 
-public class Toyota implements Persistence{
+public class Honda implements Persistence{
+
     String nameCar;
     String model;
     String license;
 
-    public Toyota(String name, String model, String license){
-        this.nameCar = name;
+    public Honda(String nameCar, String model, String license) {
+        this.nameCar = nameCar;
         this.model = model;
         this.license = license;
-    }
-    @Override
-    public String getLicence() {
-        return this.license;
     }
 
     @Override
     public String toString() {
-        return "Toyota{" +
+        return "Honda{" +
                 "nameCar='" + nameCar + '\'' +
                 ", model='" + model + '\'' +
                 '}';
+    }
+
+    @Override
+    public String getLicence() {
+        return this.license;
     }
 }

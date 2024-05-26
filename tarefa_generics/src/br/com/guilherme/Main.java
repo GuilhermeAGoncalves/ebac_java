@@ -4,8 +4,8 @@ import br.com.guilherme.DAO.HondaDAO;
 import br.com.guilherme.DAO.IHondaDAO;
 import br.com.guilherme.DAO.IToyotaDAO;
 import br.com.guilherme.DAO.ToyotaDAO;
-import br.com.guilherme.Domain.Honda;
-import br.com.guilherme.Domain.Toyota;
+import br.com.guilherme.domain.Honda;
+import br.com.guilherme.domain.Toyota;
 
 public class Main {
 

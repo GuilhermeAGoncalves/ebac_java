@@ -1,6 +1,6 @@
 package br.com.guilherme.DAO.Generic;
 
-import br.com.guilherme.Domain.Persistence;
+import br.com.guilherme.domain.Persistence;
 
 import java.util.HashMap;
 import java.util.Map;

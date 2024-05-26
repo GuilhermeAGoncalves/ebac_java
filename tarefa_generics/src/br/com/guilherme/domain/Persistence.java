@@ -1,4 +1,4 @@
-package br.com.guilherme.Domain;
+package br.com.guilherme.domain;
 
 public interface Persistence {
     public String getLicence();
